@@ -1,0 +1,28 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "6.1.0"
+    id 'java'
+}
+
+group = "com.ticxo.modelapi"
+version '1.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+
+    //add repository spigot.org
+    maven {
+        url = uri("https://hub.spigotmc.org/nexus/content/groups/public/")
+    }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
+    //add dependency MythicMobs
+    compileOnly 'net.cubespace:MythicMobs:0.5.0'
+}
+
+test {
+    useJUnitPlatform()
+}

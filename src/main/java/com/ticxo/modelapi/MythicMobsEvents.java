@@ -12,7 +12,7 @@ import io.lumine.xikage.mythicmobs.api.bukkit.events.MythicMechanicLoadEvent;
 import io.lumine.xikage.mythicmobs.skills.SkillCondition;
 import io.lumine.xikage.mythicmobs.skills.SkillMechanic;
 
-public class MythicMobsEvents implements Listener{
+public class MythicMobsEvents implements Listener {
 
 	@EventHandler
 	public void onMythicMechanicLoad(MythicMechanicLoadEvent e) {
